@@ -38,8 +38,19 @@
     <artifactId>selenium-java</artifactId>
     <version>4.17.0</version>
 </dependency>
+
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version> <!-- or latest -->
+    <scope>provided</scope>
+</dependency>
+
   </dependencies>
-  <build>
+  
+  
+  
+<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -48,8 +59,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<encoding>UTF-8</encoding>
-					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 			<plugin>

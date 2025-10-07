@@ -18,19 +18,17 @@ public class pom {
 		PageFactory.initElements(driver, this );
 	}
 	
-	
-	public void Username(String strusername) throws InterruptedException {
-		
-		
+	public void Username(String strusername) throws InterruptedException
+	{
 		username.sendKeys(strusername);
-		Thread.sleep(3000);	
-		}
-public void Password(String strpassword)	{
+	}
+	public void Password(String strpassword)	
+	{
+		password.sendKeys(strpassword);
+	}
+	public void loginbtn() 
+	{
+		loginbtn.click();
+	}
 	
-	password.sendKeys(strpassword);
-}
-public void loginbtn() {
-	
-	loginbtn.click();
-}
 }
