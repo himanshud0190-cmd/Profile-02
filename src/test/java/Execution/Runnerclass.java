@@ -5,13 +5,18 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\Executions\\execution.feature"},
+		features = {"src\\test\\resources\\Executions"},
+		
+		tags = "@Naukri",
 		
 		glue = {"Execution"},
 		
-		plugin = {"pretty"}
+		plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+						"html:target/cucumber-reports/reports.html",
+						"json:target/cucumber-report.json"}
 			
 		)
-public class Runnerclass extends AbstractTestNGCucumberTests {
+public class Runnerclass extends AbstractTestNGCucumberTests
+{
 
 }

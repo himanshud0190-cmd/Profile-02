@@ -18,7 +18,7 @@ public class pom {
 		PageFactory.initElements(driver, this );
 	}
 	
-	public void Username(String strusername) throws InterruptedException
+	public void Username(String strusername) 
 	{
 		username.sendKeys(strusername);
 	}

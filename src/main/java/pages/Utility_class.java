@@ -6,7 +6,8 @@ import java.util.Properties;
 
 public class Utility_class {
 	
-	public static  String property(String key) throws IOException {
+	public static  String property(String key) throws IOException 
+	{
 		
 		String path = System.getProperty("user.dir")+"\\src\\test\\resources\\p.properties";
 		
@@ -17,7 +18,7 @@ public class Utility_class {
 		
 		String value = prop.getProperty(key);
 		
-	return value;
+		return value;
 	}
 
 }

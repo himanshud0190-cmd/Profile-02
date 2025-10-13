@@ -6,27 +6,23 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
 	static WebDriver driver;
-	public WebDriver initbrowser(String browsername) {
-		
-		if(browsername.contains("chrome")) {
-			
+	public WebDriver initbrowser(String browsername)
+	{
+		if(browsername.equalsIgnoreCase("chrome")) 
+		{
 			 driver =new ChromeDriver();
-			
 		}
 		
-		else if(browsername.contains("firefox")) {
-			
-			
-			 driver=new FirefoxDriver();
+		else if(browsername.equalsIgnoreCase("firefox")) 
+		{
+			driver=new FirefoxDriver();
 		}
-		
 		return driver;
 		
 	}
 
-	public static WebDriver getdriver() {
-		
+	public static WebDriver getdriver()
+	{
 		return driver;
-		
 	}
 }
