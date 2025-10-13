@@ -67,6 +67,7 @@ public class NaurkiPom
 	
 	public void ClickProfileIcon() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		UtilityClass.WaitandClick(ProfileIcon);
 	}
 	
@@ -84,7 +85,7 @@ public class NaurkiPom
 //        uploadBtn.click();
         
         // Give your file path here
-        String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\H_D_mavenProject\\src\\test\\resources\\Resume\\HimanshuDalal.pdf";
+        String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\Profile_02\\src\\test\\resources\\Resume\\Himanshu_Resume.pdf";
         
         // Copy file path to clipboard
         StringSelection sel = new StringSelection(filePath);
@@ -122,7 +123,7 @@ public class NaurkiPom
 		Thread.sleep(1000);
 		EnterResumeHeadline.clear();
 		Thread.sleep(1000);
-		EnterResumeHeadline.sendKeys("Strong background in Automation testing using Selenium and Java with BDD Cucumber using TestNG, Maven with ability to plan, design, execute test cases and Proficient in Manual Testing from Test Design to Test Case Execution and Reports.............");
+		EnterResumeHeadline.sendKeys("Experienced QA Engineer with strong expertise in Manual and Automation Testing, Skilled in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured, Proficient in Agile methodologies, STLC, Defect Life Cycle, JIRA, Maven, Git, Jenkins etc.");
 	}
 	
 	public void ClickSaveButton() throws InterruptedException
