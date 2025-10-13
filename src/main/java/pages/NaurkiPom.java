@@ -24,7 +24,7 @@ public class NaurkiPom
 	@FindBy (xpath = "//img[@class='user-img']") private WebElement VerifyUserImage;
 	@FindBy (xpath = "//img[@alt='naukri user profile img']/self::img[@class='nI-gNb-icon-img']") private WebElement ProfileIcon;
 	@FindBy (xpath = "//a[@class='nI-gNb-info__sub-link']/self::a[text()='View & Update Profile']") private WebElement UpdateButton;
-	@FindBy (xpath = "//input[@type='button']/self::input[@value='Update resume']") private WebElement UploadResume;
+	@FindBy (xpath = "//input[@value='Update resume']") private WebElement UploadResume;
 	@FindBy (xpath = "//div[@class='s12 typ-16Bold']/self::div[text()='Resume']") private WebElement Scroll;
 	@FindBy (xpath = "//div[@class='msgBox success ']/descendant::p[text()='Success']") private WebElement UploadSuccessMessage;
 	@FindBy (xpath = "//span[text()='Resume headline']/following-sibling::span[text()='editOneTheme']") private WebElement RHEditButton;
@@ -42,7 +42,7 @@ public class NaurkiPom
 	
 	public void ClickLoginButton() 
 	{
-		LoginButton.click();
+		UtilityClass.WaitandClick(LoginButton);
 	}
 	
 	public void EnterUserName(String UserName) 
@@ -57,7 +57,7 @@ public class NaurkiPom
 	
 	public void ClickLoginButton2() 
 	{
-		ClickLoginButton2.click();
+		UtilityClass.WaitandClick(ClickLoginButton2);
 	}
 	
 	public void VerifyUserImage() 
@@ -67,20 +67,21 @@ public class NaurkiPom
 	
 	public void ClickProfileIcon() throws InterruptedException
 	{
-		Thread.sleep(2000);
-		ProfileIcon.click();
+		UtilityClass.WaitandClick(ProfileIcon);
 	}
 	
 	public void ClickUpdateButton()
 	{
-		UpdateButton.click();
+		UtilityClass.WaitandClick(UpdateButton);
 	}
 	
 	public void UploadResume() throws InterruptedException, AWTException
 	{
+		Thread.sleep(2000);
 		// Click on the upload button
-        WebElement uploadBtn = driver.findElement(By.xpath("//input[@value='Update resume']"));
-        uploadBtn.click();
+		UtilityClass.WaitandClick(UploadResume);
+//        WebElement uploadBtn = driver.findElement(By.xpath("//input[@value='Update resume']"));
+//        uploadBtn.click();
         
         // Give your file path here
         String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\H_D_mavenProject\\src\\test\\resources\\Resume\\HimanshuDalal.pdf";
@@ -113,7 +114,7 @@ public class NaurkiPom
 	
 	public void ClickResumeHeadlineEditButton()
 	{
-		RHEditButton.click();
+		UtilityClass.WaitandClick(RHEditButton);
 	}
 	
 	public void EnterResumeHeadline() throws InterruptedException
@@ -126,8 +127,7 @@ public class NaurkiPom
 	
 	public void ClickSaveButton() throws InterruptedException
 	{
-		Thread.sleep(2000);
-		ClickSaveButton.click();
+		UtilityClass.WaitandClick(ClickSaveButton);
 	}
 	
 	public boolean VerifyRHSuccessMessage()
@@ -138,7 +138,7 @@ public class NaurkiPom
 	
 	public void ClickLogoutButton()
 	{
-		LogoutButton.click();
+		UtilityClass.WaitandClick(LogoutButton);
 	}
 	
 	public boolean ClickRegisterButton()

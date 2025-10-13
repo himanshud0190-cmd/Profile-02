@@ -11,7 +11,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import pages.DriverFactory;
-import pages.Utility_class;
+import pages.UtilityClass;
 
 public class Hooks 
 {
@@ -20,7 +20,7 @@ public class Hooks
 	public void openbrowser() throws IOException
 	{
 		DriverFactory df=new DriverFactory();
-		String browsername = Utility_class.property("browsername");
+		String browsername = UtilityClass.property("browsername");
 		driver = df.initbrowser(browsername);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
