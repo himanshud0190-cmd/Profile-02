@@ -79,11 +79,8 @@ public class NaurkiPom
 	public void UploadResume() throws InterruptedException, AWTException
 	{
 		Thread.sleep(2000);
-		// Click on the upload button
 		UtilityClass.WaitandClick(UploadResume);
-//        WebElement uploadBtn = driver.findElement(By.xpath("//input[@value='Update resume']"));
-//        uploadBtn.click();
-        
+
         // Give your file path here
         String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\Profile_02\\src\\test\\resources\\Resume\\Himanshu_Resume.pdf";
         

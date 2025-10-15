@@ -29,7 +29,7 @@ public class Hooks
 	@After
 	public void closebrowser() throws IOException
 	{
-		Desktop.getDesktop().browse(new File("test-output\\SparkReport\\Index.html").toURI());
+//		Desktop.getDesktop().browse(new File("test-output\\SparkReport\\Index.html").toURI());
 		driver.quit();
 	}
 
