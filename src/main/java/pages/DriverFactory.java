@@ -23,8 +23,6 @@ public class DriverFactory {
 			System.setProperty("webdriver.edge.driver", "C:\\Users\\hd888\\Desktop\\IMP_Interview\\msedgedriver.exe");
 			 driver = new EdgeDriver();
 		}
-		
-		
 		return driver;
 		
 	}
