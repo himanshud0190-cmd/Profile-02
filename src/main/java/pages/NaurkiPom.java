@@ -82,7 +82,7 @@ public class NaurkiPom
 		UtilityClass.WaitandClick(UploadResume);
 
         // Give your file path here
-        String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\Profile_02\\src\\test\\resources\\Resume\\Himanshu_Resume.pdf";
+        String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\Profile_02\\src\\test\\resources\\Resume\\DHimanshuResume.pdf";
         
         // Copy file path to clipboard
         StringSelection sel = new StringSelection(filePath);
@@ -120,7 +120,7 @@ public class NaurkiPom
 		Thread.sleep(1000);
 		EnterResumeHeadline.clear();
 		Thread.sleep(1000);
-		EnterResumeHeadline.sendKeys("Experienced QA Engineer with strong expertise in Manual and Automation Testing, Skilled in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured, Proficient in Agile methodologies, STLC, Defect Life Cycle, JIRA, Maven, Git, Jenkins etc.");
+		EnterResumeHeadline.sendKeys("Result-oriented QA Automation Engineer with expertise in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured), and sound understanding of Agile, STLC, Defect Life Cycle, and CI/CD tools.");
 	}
 	
 	public void ClickSaveButton() throws InterruptedException

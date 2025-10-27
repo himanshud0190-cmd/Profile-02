@@ -32,13 +32,13 @@ public class NaukriStepDefinition
 	@When("User enters Username as {string}")
 	public void UserentersUsername(String UserName) 
 	{
-		NP.EnterUserName("dalaljhimanshu@gmail.com");
+		NP.EnterUserName("hdalal402264@gmail.com");
 	}
 	
 	@When("User enters Password as {string}")
 	public void UserentersPassword(String PassWord) 
 	{
-		NP.EnterPassWord("DALALJHIMANSHU@GMAIL.COM");
+		NP.EnterPassWord("HDALAL402264@GMAIL.COM");
 	}
 	
 	@When("User clicks on Login button2")
