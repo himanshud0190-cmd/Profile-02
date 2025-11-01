@@ -120,7 +120,7 @@ public class NaurkiPom
 		Thread.sleep(1000);
 		EnterResumeHeadline.clear();
 		Thread.sleep(1000);
-		EnterResumeHeadline.sendKeys("Result-oriented QA Automation Engineer with expertise in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured), and sound understanding of Agile, STLC, Defect Life Cycle, and CI/CD tools.");
+		EnterResumeHeadline.sendKeys("Result-oriented QA Automation Engineer with expertise in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured), and sound understanding of Agile, STLC, Defect Life Cycle, and CI/CD tools.............");
 	}
 	
 	public void ClickSaveButton() throws InterruptedException
