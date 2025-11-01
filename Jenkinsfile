@@ -11,7 +11,7 @@ pipeline
                 git 'https://github.com/himanshud0190-cmd/Profile-02.git'
             }
         }
-        stage('Executing Maven Project on Chrome Browser')
+        stage('Executing Maven Project on Firefox Browser')
         {
             steps
             {
