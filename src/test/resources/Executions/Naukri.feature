@@ -15,6 +15,6 @@ When User clicks on Resume Headline edit button
 And User enters Resume Headline
 And User clicks on Save button
 # Then Verify that user should get Resume Headline Success message
-When User clicks on profile button
-And User clicks on Logout button
-Then Verify that user should get navigates to Registration page
+# When User clicks on profile button
+# And User clicks on Logout button
+# Then Verify that user should get navigates to Registration page
