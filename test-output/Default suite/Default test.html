@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 02 07:33:38 IST 2025</td>
+<td>Started on:</td><td>Sun Feb 15 13:16:09 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27813 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26015 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,9 +77,74 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Execution.Runnerclass.runScenario()'><b>runScenario</b><br>Test class: Execution.Runnerclass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user should get able to update the profile by uploading resume", "Updating Naukri Profile Automatically"</td>
-<td></td>
-<td>25</td>
-<td>Execution.Runnerclass@70ed52de</td></tr>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;img class=&quot;nI-gNb-icon-img&quot; src=&quot;https://media.naukri.com/media/jphotov1/l244%253ALukcMTu43wQcHryyXQgEbp4wxn4jZsU%252Fg1t73KSnRo1GRTE26ArbIqmL9ojH&quot;&gt; is not clickable at point (1301,37) because another element &lt;div class=&quot;ltLayer open&quot;&gt; obscures it
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bf88ae0d-14eb-4a75-b719-169245eaf936, clickElement {id=9bc72301-18df-4c67-878e-aa8b2c9bf8ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22600, moz:profile: C:\Users\hd888\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (bf88ae0d-14eb-4a75-b719-169245eaf936)] -&gt; xpath: //img[@alt=&apos;naukri user profile img&apos;]/self::img[@class=&apos;nI-gNb-icon-img&apos;]]
+Session ID: bf88ae0d-14eb-4a75-b719-169245eaf936
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at pages.UtilityClass.WaitandClick(UtilityClass.java:38)
+	at pages.NaurkiPom.ClickProfileIcon(NaurkiPom.java:70)
+	at Execution.NaukriStepDefinition.Userclicksonprofilebutton(NaukriStepDefinition.java:65)
+	at ✽.User clicks on profile button(file:///C:/Users/hd888/Desktop/Himanshu&apos;s%20Projects/Profile_02/src/test/resources/Executions/Naukri.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace355222677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace355222677'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;img class=&quot;nI-gNb-icon-img&quot; src=&quot;https://media.naukri.com/media/jphotov1/l244%253ALukcMTu43wQcHryyXQgEbp4wxn4jZsU%252Fg1t73KSnRo1GRTE26ArbIqmL9ojH&quot;&gt; is not clickable at point (1301,37) because another element &lt;div class=&quot;ltLayer open&quot;&gt; obscures it
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bf88ae0d-14eb-4a75-b719-169245eaf936, clickElement {id=9bc72301-18df-4c67-878e-aa8b2c9bf8ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22600, moz:profile: C:\Users\hd888\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (bf88ae0d-14eb-4a75-b719-169245eaf936)] -&gt; xpath: //img[@alt=&apos;naukri user profile img&apos;]/self::img[@class=&apos;nI-gNb-icon-img&apos;]]
+Session ID: bf88ae0d-14eb-4a75-b719-169245eaf936
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at pages.UtilityClass.WaitandClick(UtilityClass.java:38)
+	at pages.NaurkiPom.ClickProfileIcon(NaurkiPom.java:70)
+	at Execution.NaukriStepDefinition.Userclicksonprofilebutton(NaukriStepDefinition.java:65)
+	at ✽.User clicks on profile button(file:///C:/Users/hd888/Desktop/Himanshu&apos;s%20Projects/Profile_02/src/test/resources/Executions/Naukri.feature:18)
+</pre></div></td>
+<td>24</td>
+<td>Execution.Runnerclass@1a75e76a</td></tr>
 </table><p>
 </body>
 </html>

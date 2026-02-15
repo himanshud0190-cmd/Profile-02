@@ -32,13 +32,13 @@ public class NaukriStepDefinition
 	@When("User enters Username as {string}")
 	public void UserentersUsername(String UserName) 
 	{
-		NP.EnterUserName("hdalal402264@gmail.com");
+		NP.EnterUserName("dalalhimanshu19051999@gmail.com");
 	}
 	
 	@When("User enters Password as {string}")
 	public void UserentersPassword(String PassWord) 
 	{
-		NP.EnterPassWord("HDALAL402264@GMAIL.COM");
+		NP.EnterPassWord("DALALHIMANSHU19051999@GMAIL.COM");
 	}
 	
 	@When("User clicks on Login button2")
@@ -85,8 +85,9 @@ public class NaukriStepDefinition
 	}
 	
 	@When("User clicks on Resume Headline edit button")
-	public void UserclicksonResumeHeadlineeditbutton()
+	public void UserclicksonResumeHeadlineeditbutton() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		NP.ClickResumeHeadlineEditButton();
 	}
 	

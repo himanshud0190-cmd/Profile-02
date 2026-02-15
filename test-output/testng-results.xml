@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-02T07:33:38 IST" name="Default suite" finished-at="2025-11-02T07:34:06 IST" duration-ms="27813">
+  <suite started-at="2026-02-15T13:16:09 IST" name="Default suite" finished-at="2026-02-15T13:16:35 IST" duration-ms="26015">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Execution.Runnerclass@70ed52de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Execution.Runnerclass@1a75e76a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-02T07:33:38 IST" name="Default test" finished-at="2025-11-02T07:34:06 IST" duration-ms="27813">
+    <test started-at="2026-02-15T13:16:09 IST" name="Default test" finished-at="2026-02-15T13:16:35 IST" duration-ms="26015">
       <class name="Execution.Runnerclass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Execution.Runnerclass@70ed52de]" started-at="2025-11-02T07:33:38 IST" name="setUpClass" finished-at="2025-11-02T07:33:39 IST" duration-ms="751" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Execution.Runnerclass@1a75e76a]" started-at="2026-02-15T13:16:09 IST" name="setUpClass" finished-at="2026-02-15T13:16:09 IST" duration-ms="617" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@bb12f41]]>
+                <![CDATA[org.testng.TestRunner@21b744ec]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Execution.Runnerclass@70ed52de]" started-at="2025-11-02T07:33:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-02T07:34:04 IST" duration-ms="25689" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Execution.Runnerclass@1a75e76a]" started-at="2026-02-15T13:16:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-15T13:16:33 IST" duration-ms="24048" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,57 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <img class="nI-gNb-icon-img" src="https://media.naukri.com/media/jphotov1/l244%253ALukcMTu43wQcHryyXQgEbp4wxn4jZsU%252Fg1t73KSnRo1GRTE26ArbIqmL9ojH"> is not clickable at point (1301,37) because another element <div class="ltLayer open"> obscures it
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bf88ae0d-14eb-4a75-b719-169245eaf936, clickElement {id=9bc72301-18df-4c67-878e-aa8b2c9bf8ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22600, moz:profile: C:\Users\hd888\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (bf88ae0d-14eb-4a75-b719-169245eaf936)] -> xpath: //img[@alt='naukri user profile img']/self::img[@class='nI-gNb-icon-img']]
+Session ID: bf88ae0d-14eb-4a75-b719-169245eaf936]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <img class="nI-gNb-icon-img" src="https://media.naukri.com/media/jphotov1/l244%253ALukcMTu43wQcHryyXQgEbp4wxn4jZsU%252Fg1t73KSnRo1GRTE26ArbIqmL9ojH"> is not clickable at point (1301,37) because another element <div class="ltLayer open"> obscures it
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bf88ae0d-14eb-4a75-b719-169245eaf936, clickElement {id=9bc72301-18df-4c67-878e-aa8b2c9bf8ac}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22600, moz:profile: C:\Users\hd888\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (bf88ae0d-14eb-4a75-b719-169245eaf936)] -> xpath: //img[@alt='naukri user profile img']/self::img[@class='nI-gNb-icon-img']]
+Session ID: bf88ae0d-14eb-4a75-b719-169245eaf936
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at pages.UtilityClass.WaitandClick(UtilityClass.java:38)
+at pages.NaurkiPom.ClickProfileIcon(NaurkiPom.java:70)
+at Execution.NaukriStepDefinition.Userclicksonprofilebutton(NaukriStepDefinition.java:65)
+at ✽.User clicks on profile button(file:///C:/Users/hd888/Desktop/Himanshu's%20Projects/Profile_02/src/test/resources/Executions/Naukri.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Execution.Runnerclass@70ed52de]" started-at="2025-11-02T07:34:04 IST" name="tearDownClass" finished-at="2025-11-02T07:34:06 IST" duration-ms="1329" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Execution.Runnerclass@1a75e76a]" started-at="2026-02-15T13:16:34 IST" name="tearDownClass" finished-at="2026-02-15T13:16:35 IST" duration-ms="1309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -6,8 +6,6 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,7 +28,8 @@ public class NaurkiPom
 	@FindBy (xpath = "//span[text()='Resume headline']/following-sibling::span[text()='editOneTheme']") private WebElement RHEditButton;
 	@FindBy (id        = "resumeHeadlineTxt") private WebElement EnterResumeHeadline;
 	@FindBy (xpath = "//button[text()='Save']") private WebElement ClickSaveButton;
-	@FindBy (xpath = "//div[@class='msgBox success ']/descendant::p[@class='msg']") private WebElement RHSuccessMessage;
+//	@FindBy (xpath = "//div[@class='msgBox success ']/descendant::p[@class='msg']") private WebElement RHSuccessMessage;
+	@FindBy (xpath = "//img[@class='success-icon']") private WebElement RHSuccessMessage;
 	@FindBy (xpath = "//a[@title='Logout']") private WebElement LogoutButton;
 	@FindBy (id        = "register_Layer") private WebElement RegistrationButton;
 	
@@ -82,7 +81,7 @@ public class NaurkiPom
 		UtilityClass.WaitandClick(UploadResume);
 
         // Give your file path here
-        String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\Profile_02\\src\\test\\resources\\Resume\\DHimanshuResume.pdf";
+        String filePath = "C:\\Users\\hd888\\Desktop\\Himanshu's Projects\\Profile_02\\src\\test\\resources\\Resume\\Resume_HimanshuDalal.pdf";
         
         // Copy file path to clipboard
         StringSelection sel = new StringSelection(filePath);
@@ -120,7 +119,7 @@ public class NaurkiPom
 		Thread.sleep(1000);
 		EnterResumeHeadline.clear();
 		Thread.sleep(1000);
-		EnterResumeHeadline.sendKeys("Result-oriented QA Automation Engineer with expertise in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured), and sound understanding of Agile, STLC, Defect Life Cycle, and CI/CD tools.............");
+		EnterResumeHeadline.sendKeys("Experienced Automation Test Engineer (3.5 years) with expertise in Selenium WebDriver, Java, and API Automation using Postman and Rest Assured. Skilled in script development, test execution, Agile collaboration to ensure high-quality software......");
 	}
 	
 	public void ClickSaveButton() throws InterruptedException
